@@ -1,0 +1,48 @@
+baseURL: "https://toolstackreviews.org/"
+languageCode: "en-us"
+title: "ToolStack Reviews"
+theme: "PaperMod"
+paginate: 10
+
+params:
+  env: production
+  title: ToolStack Reviews
+  description: "Honest, in-depth reviews of AI tools, SaaS platforms, and productivity software. Updated daily."
+  keywords: [AI tools, SaaS reviews, software comparison, productivity tools]
+  author: ToolStack Reviews Team
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Find the right software, faster"
+    Content: "Independent reviews and comparisons of AI tools, SaaS platforms, and productivity software — updated daily."
+
+  socialIcons:
+    - name: "rss"
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
