@@ -1,5 +1,5 @@
 # ToolStack Reviews — Site Config
-# Domain: toolstackreviews.com (register via Cloudflare Registrar)
+# Domain: toolstackreviews.org (registered via Cloudflare Registrar)
 # Host: Cloudflare Pages (free tier)
 # Theme: Hugo PaperMod
 # GitHub Repo: github.com/jasonjdr/toolstack-reviews
