@@ -8,8 +8,8 @@ pagination:
 params:
   env: production
   title: ToolStack Reviews
-  description: "Honest, in-depth reviews of AI tools, SaaS platforms, and productivity software. Updated daily."
-  keywords: [AI tools, SaaS reviews, software comparison, productivity tools]
+  description: "Honest, in-depth reviews of AI tools, SaaS platforms, and productivity software. Updated weekly."
+  keywords: [AI tools, SaaS reviews, software comparison, productivity tools, best AI tools 2026]
   author: ToolStack Reviews Team
   defaultTheme: auto
   ShowReadingTime: true
@@ -17,10 +17,21 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowToc: true
+  TocOpen: false
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
 
   homeInfoParams:
-    Title: "Find the right software, faster"
-    Content: "Independent reviews and comparisons of AI tools, SaaS platforms, and productivity software — updated daily."
+    Title: "Cut through the noise. Find tools that work."
+    Content: >
+      We test AI tools, SaaS platforms, and productivity software so you don't have to.
+      Every review is independent, hands-on, and updated for 2026.
 
   socialIcons:
     - name: "rss"
@@ -28,14 +39,22 @@ params:
 
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
+    - identifier: ai-tools
+      name: AI Tools
+      url: /tags/ai-tools/
       weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
+    - identifier: productivity
+      name: Productivity
+      url: /tags/productivity/
       weight: 20
+    - identifier: seo
+      name: SEO Tools
+      url: /tags/seo/
+      weight: 30
+    - identifier: categories
+      name: All Reviews
+      url: /categories/
+      weight: 40
 
 outputs:
   home:

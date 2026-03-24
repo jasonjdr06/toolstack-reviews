@@ -1,0 +1,132 @@
+/* ToolStack Reviews — Custom Styles */
+
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --accent: #f59e0b;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --bg-card: #f9fafb;
+  --border: #e5e7eb;
+  --radius: 10px;
+}
+
+/* Typography improvements */
+body {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.post-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  color: var(--text-primary);
+}
+
+.post-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+}
+
+/* Tool cards — section dividers styled as cards */
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* Comparison tables */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.post-content table th {
+  background: var(--primary);
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.post-content table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content table tr:nth-child(even) td {
+  background: var(--bg-card);
+}
+
+.post-content table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Affiliate CTA links */
+.post-content a[href*="affiliate"],
+.post-content p > a:last-child {
+  display: inline-block;
+  background: var(--primary);
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.post-content a[href*="affiliate"]:hover,
+.post-content p > a:last-child:hover {
+  background: var(--primary-dark);
+}
+
+/* Pros/cons lists */
+.post-content ul li::marker {
+  color: var(--primary);
+}
+
+/* Homepage hero */
+.home-info-content {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+/* Post entry cards */
+.post-entry {
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: white;
+}
+
+.post-entry:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Reading time & metadata */
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .post-content table { font-size: 0.85rem; }
+  .post-content table th, .post-content table td { padding: 8px 10px; }
+}
